@@ -23,5 +23,6 @@ def main():
     results = model(paddle.to_tensor(tensor_img))
     lab = np.argsort(results.numpy())
     print('本次预测的字体是{}'.format(lab[0][1]))
+    print(' ')
     
 main()
